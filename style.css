@@ -1,0 +1,67 @@
+body {
+    height: 100vh; /*tamaño toda da div(tela)*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: rgb(22, 151, 24);
+}
+
+#main-play-area {
+    background-color: rgb(129, 55, 55);
+    background-image: url(img/space.png);
+    height: 600px;
+    width: 600px;
+
+}
+
+.game-instructions{
+    position: relative;
+    color: aliceblue;
+    left: 9rem;
+    top: 0px;
+}
+.start-button{
+    position: relative;
+    color: rgb(225, 234, 241);
+    top: 9rem;
+    left: 15rem;
+    cursor: pointer;
+}
+
+
+
+.player-ship {
+    position: relative;
+    height: 60px; /*altura*/
+    width: 70px; /*largura*/
+    left: 20px; /*Posiciona à esquerda da tela*/
+    top: 250px;
+}
+
+.laser{
+    position: relative;
+    width: 40px;
+    height: 30px;
+}
+
+.enemy {
+    height: 60px;
+    width:  70px;
+    position: relative;
+}
+
+.enemy-transition{
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.dead-enemy{
+    height: 60px;
+    width: 70px;
+    position: relative;
+    opacity: 0;
+}
